@@ -1,0 +1,17 @@
+User-agent: *
+
+User-agent: googlebot-mobile
+Disallow: 
+User-agent: Slurp
+Disallow: 
+User-agent: Teoma
+Disallow: 
+User-agent: baiduspider
+Disallow: 
+User-agent: yahoo-mmcrawler
+Disallow: 
+User-agent: yahoo-blogs/v3.9
+Disallow: 
+
+Sitemap: https://www.storystar.com/sitemap.xml
+

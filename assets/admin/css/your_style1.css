@@ -1,0 +1,496 @@
+/*
+ * It is advised not to edit the smartadmin_production.css
+ * as this will override any changes you make in the 
+ * later versions of this theme. 
+ * 
+ * We advise that you use use this CSS to override 
+ * SmartAdmin styles. 
+ * 
+ * Rename the stylesheet to whatever your liking so it will stay
+ * unique to you with each update of SmartAdmin.
+ */
+
+/*
+ * INDEX
+ * 
+ * - HTML
+ * - BODY
+ * - CUSTOM STYLES
+ */
+@font-face {
+
+    font-family: 'Oxygen-Regular';
+
+    src: url('/assets/app/fonts/Oxygen-Regular.eot?#iefix') format('embedded-opentype'), url('/assets/app/fonts/Oxygen-Regular.woff') format('woff'), url('/assets/app/fonts/Oxygen-Regular.ttf') format('truetype'), url('/assets/app/fonts/Oxygen-Regular.svg#Oxygen-Regular') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+.html-form .row {
+    display: box;
+    display: flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.html-form .col-12 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    float: none;
+}
+
+.html-form .col-11 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 92.66%;
+    -ms-flex: 0 0 92.66%;
+    flex: 0 0 92.66%;
+    max-width: 92.66%;
+    float: none;
+}
+
+.html-form .col-10 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 83.33%;
+    -ms-flex: 0 0 83.33%;
+    flex: 0 0 83.33%;
+    max-width: 83.33%;
+    float: none;
+}
+
+.html-form .col-9 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 75%;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+    float: none;
+}
+
+.html-form .col-8 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 66.66%;
+    -ms-flex: 0 0 66.66%;
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+    float: none;
+}
+
+.html-form .col-7 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 58.33%;
+    -ms-flex: 0 0 58.33%;
+    flex: 0 0 58.33%;
+    max-width: 58.33%;
+    float: none;
+}
+
+.html-form .col-6 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    float: none;
+}
+
+.html-form .col-5 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 41.66%;
+    -ms-flex: 0 0 41.66%;
+    flex: 0 0 41.66%;
+    max-width: 41.66%;
+    float: none;
+}
+
+.html-form .col-4 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.33%;
+    -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    float: none;
+}
+
+.html-form .col-3 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    float: none;
+}
+
+.html-form .col-2 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 16.66%;
+    -ms-flex: 0 0 16.66%;
+    flex: 0 0 16.66%;
+    max-width: 16.66%;
+    float: none;
+}
+
+.html-form .col-1 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 8.33%;
+    -ms-flex: 0 0 8.33%;
+    flex: 0 0 8.33%;
+    max-width: 8.33%;
+    float: none;
+}
+
+#loader {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    position: fixed;    /*transform: translate(-50%, -50%);*/
+    z-index: 9999;
+    background: url("../img/ajax-loader.gif") no-repeat center center rgba(0, 0, 0, 0)
+}
+
+.dataTables_length {
+    float: right;
+}
+
+.dataTables_length select {
+    border: 1px solid #999;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 1px 3px #ccc;
+    -moz-box-shadow: 1px 1px 3px #ccc;
+    -ms-box-shadow: 1px 1px 3px #ccc;
+    -o-box-shadow: 1px 1px 3px #ccc;
+    box-shadow: 1px 1px 3px #ccc;
+    background: #fff;
+    background: -webkit-linear-gradient(top, #fff 0, #f3f3f3 89%, #f9f9f9 100%);
+    background: -moz-linear-gradient(top, #fff 0, #f3f3f3 89%, #f9f9f9 100%);
+    background: -ms-linear-gradient(top, #fff 0, #f3f3f3 89%, #f9f9f9 100%);
+    background: -o-linear-gradient(top, #fff 0, #f3f3f3 89%, #f9f9f9 100%);
+    background: linear-gradient(top, #fff 0, #f3f3f3 89%, #f9f9f9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f9f9f9', GradientType=0);
+}
+
+.dataTables_length select:hover {
+    border: 1px solid #666;
+    text-decoration: none !important;
+    -webkit-box-shadow: 1px 1px 3px #999;
+    -moz-box-shadow: 1px 1px 3px #999;
+    -ms-box-shadow: 1px 1px 3px #999;
+    -o-box-shadow: 1px 1px 3px #999;
+    box-shadow: 1px 1px 3px #999;
+    background: #f3f3f3;
+    background: -webkit-linear-gradient(top, #f3f3f3 0, #e2e2e2 89%, #f4f4f4 100%);
+    background: -moz-linear-gradient(top, #f3f3f3 0, #e2e2e2 89%, #f4f4f4 100%);
+    background: -ms-linear-gradient(top, #f3f3f3 0, #e2e2e2 89%, #f4f4f4 100%);
+    background: -o-linear-gradient(top, #f3f3f3 0, #e2e2e2 89%, #f4f4f4 100%);
+    background: linear-gradient(top, #f3f3f3 0, #e2e2e2 89%, #f4f4f4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3', endColorstr='#f4f4f4', GradientType=0);
+}
+
+.dashboard .product-content .product-image {
+    min-height: 95px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.dashboard .product-content .product-deatil {
+    border-bottom: 0;
+}
+
+.showUploeded img {
+    max-height: 32px;
+}
+
+.btn-group.showUploeded > .btn {
+    float: none;
+    vertical-align: top;
+}
+
+.select2-hidden-accessible {
+    display: none !important;
+}
+
+.select2-selection__rendered {
+    padding-left: 10px !important;
+}
+
+.state-error .select2-selection {
+    background: #fff0f0;
+    border-color: #A90329;
+}
+
+.display-none {
+    display: none;
+}
+
+table.dataTable td, table.dataTable th {
+    vertical-align: middle !important;
+}
+
+.btn-padding {
+    padding: 4px 30px;
+}
+
+.smart-form, .smart-form fieldset {
+
+    /*background: #FAFAFA;*/
+    background: transparent;
+}
+
+.txt-bold {
+    font-weight: bold;
+}
+
+.toggle-vis {
+    cursor: pointer;
+}
+
+.custom-div {
+    padding: 10px 8px 10px;
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #DDDDDD;
+    background: #fafafa;
+}
+
+.action-btn .btn, a:link, button {
+    margin-bottom: 3px;
+}
+
+.padding-right-0 {
+    padding-right: 0px;
+}
+
+::-webkit-input-placeholder {
+
+    /* WebKit, Blink, Edge */
+    color: #FFF;
+    opacity: 0.7;
+}
+
+:-moz-placeholder {
+
+    /* Mozilla Firefox 4 to 18 */
+    color: #FFF;
+    opacity: 0.7;
+}
+
+::-moz-placeholder {
+
+    /* Mozilla Firefox 19+ */
+    color: #FFF;
+    opacity: 0.7;
+}
+
+:-ms-input-placeholder {
+
+    /* Internet Explorer 10-11 */
+    color: #FFF;
+    opacity: 0.7;
+}
+
+::-ms-input-placeholder {
+
+    /* Microsoft Edge */
+    color: #FFF;
+    opacity: 0.7;
+}
+
+.control-label img {
+    background: #FFF;
+}
+
+.select2-selection__choice {
+    padding: 1px 28px 1px 8px !important;
+    margin: 4px 0 3px 5px !important;
+}
+
+.select2-selection__choice__remove {
+    text-align: right;
+    padding: 2px !important;
+}
+
+.product-content {
+    background: transparent !important;
+}
+
+.product-content .product-deatil {
+    background: transparent !important;
+}
+
+.product-content .product-deatil h5 a span {
+    color: #22262e !important;
+}
+
+.product-content .product-image {
+    background: transparent !important;
+}
+
+table.table-bordered.dataTable {
+    word-break: break-all;
+}
+
+.setting_btn {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.select2-container--disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.product-deatil .certified.staradmin ul li {
+    border-radius: 10px;
+    border: 2px solid #385c5b;
+}
+
+#sparks {
+    text-align: left;
+}
+
+#logoimg {
+    width: 160px !important;
+    height: auto;
+    margin-top: -13px !important;
+    margin-left: 11px !important;
+}
+
+#link1 {
+    cursor: pointer !important;
+    border-color: #a90329 !important;
+    background-color: #a90329 !important;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#link2 {
+    cursor: pointer !important;
+    background-color: #6e3671 !important;
+    border-color: #6e3671 !important;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-btn {
+    cursor: pointer !important;
+    background-color: #57889c !important;
+    border-color: #4e7a8c !important;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #3276B1 !important;
+}
+
+#deleteMultiple {
+    cursor: pointer !important;
+    border-color: #a90329 !important;
+    background-color: #a90329 !important;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.smart-style-5 .smart-form .state-success li input, .smart-style-5 .smart-form .input li input {
+    color: #000;
+    background: transparent !important;
+}
+
+.error-box {
+    margin-top: 150px;
+}
+
+.smart-style-1 #logo-group, .smart-style-1 #header, .smart-style-1 aside, .smart-style-1 nav ul ul {
+    background: #000138 !important;
+}
+
+.jarviswidget .widget-body {
+    background: #f9f9f9;
+}
+
+.smart-form, .smart-form .toggle, .smart-form .input input, .smart-form .select select, .smart-form .textarea textarea, .bootstrap-duallistbox-container label, .form header, legend, .form-control, .dataTables_empty {
+    color: #000;
+}
+
+.smart-style-1 nav ul li a:hover {
+    color: #FFF;
+}
+
+element {
+}
+
+.smart-style-1 nav ul ul li > a:hover {
+    background: #0d0065  !important;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-wrapper {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    word-break: break-all;
+}
+
+.card-wrapper form{
+    width: 50%;
+}
+.card-wrapper a {
+    width: 50%;
+    color: #333;
+}
+.card-wrapper:hover {
+    box-shadow: 3px 5px 10px #0000002b;
+}
+
+.card-wrapper span{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-wrapper-icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 50px;
+    background: #e5e5e5;
+}
+.card-wrapper-icon:last-child{
+    border-left: solid 2px #fff;
+}
+
+.card-wrapper-icon:hover{
+    color: #a90329;
+    background: #f1f1f1;
+}
+
+.card-wrapper-icon:last-child:hover{
+    color: #6e3671;
+}
